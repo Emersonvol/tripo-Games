@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Suez+One&display=swap");
+:root {
+  --fundo-menu: #fff;
+  --destaque-menu: #da392b;
+  --color-fonte: #272443;
+  --gradiente: linear-gradient(rgba(58, 58, 58, 0.565), rgba(253, 2, 2, 0.486));
+  --gradiente-hover: linear-gradient(rgba(58, 58, 58, 0), rgba(253, 2, 2, 0));
+  --font-primaria: "Suez One", serif;
+  --font-secundaria: "Playwrite IT Moderna", cursive;
+  --font-terciaria: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  --cor-secundaria: #f5e250;
+}
+body {
+  background-color: #eeefea;
+  
+
+}
+.header {
+  font-weight: 200;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+.header-navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5em;
+}
+
+.header-navBar_logo {
+  background-color: var(--destaque-menu);
+  padding: 1em 1em;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  font-size: 20px;
+  font-family: var(--font-secundaria);
+  font-weight: 900;
+  color: #fff;
+}
+
+.header-navBar ul {
+  display: flex;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  box-shadow: -.5px -0.5px 3px var(--destaque-menu);
+}
+
+.header-navBar_dorp-down {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: 3.6em 0.5em;
+  visibility: hidden;
+}
+
+.header-navBar ul li {
+  display: flex;
+}
+
+.header-navBar ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 1em;
+  color: #000;
+  transition: 0.1s ease-in-out;
+  background-color: var(--fundo-menu);
+}
+.header-navBar ul li:last-child a {
+  border-end-end-radius: 10px;
+}
+
+.header-navBar ul li:first-child a {
+  border-end-start-radius: 10px;
+}
+
+.header-navBar ul li a:hover {
+  background-color: var(--destaque-menu);
+  color: var(--fundo-menu);
+}
+
+.parallax {
+  display: flex;
+  max-width: 1915px;
+  min-width: 320px;
+  width: 100%;
+  max-height: 1900px;
+  height: 800px;
+  background-image: url("imagens/fundo-grande.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30em;
+}
+.parallax-div {
+  color: var(--color-fonte);
+  font-family: var(--font-primaria);
+  margin: 0 100px;
+}
+.parallax-div h2 {
+  font-size: 5em;
+  margin: 0.1em 0;
+}
+.parallax-div h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin: 1em 0em;
+}
+.parallax-div_loja {
+  margin: 1em;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  height: 1em;
+  margin: 5em 0em;
+}
+
+.cards-jogos {
+  margin: 1em;
+}
+
+.cards-jogos figure {
+  display: flex;
+  position: relative;
+  text-align: center;
+}
+.cards-jogos figure img {
+  border-radius: 20px;
+}
+
+.cards-jogos figure figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: var(--gradiente);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+.cards-jogos figure figcaption:hover {
+  opacity: 0;
+}
+
+.cards-jogos figure figcaption small,
+.cards-jogos figure figcaption p {
+  margin: 0 3em;
+  font-size: 18px;
+  font-weight: 500;
+}
+.cards-jogos figure figcaption small {
+  padding-bottom: 3em;
+  padding-top: 0.5em;
+}
+
+.cards-conheca-mas {
+  width: 396px;
+  height: 528px;
+  background-color: var(--cor-secundaria);
+  margin: 1em;
+  border-radius: 20px;
+}
+.cards-conheca-mas h3 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: var(--gradiente);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.cards-conheca-mas h3:hover {
+  background-image: var(--gradiente-hover);
+  color: #fff;
+}
+
+.sobre,
+.nossos-games {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sobre h3 {
+  color: var(--color-fonte);
+  font-size: 25px;
+  font-family: ver(--font-terciaria);
+}
+
+.sobre h2,
+.nossos-games h2 {
+  color: var(--color-fonte);
+  font-size: 50px;
+  font-family: var(--font-primaria);
+  line-height: 1.2em;
+  margin: 0.5em;
+}
+
+.sobre p,
+.nossos-games p {
+  color: var(--color-fonte);
+  font-family: ver(--font-terciaria);
+  line-height: 1.2em;
+  width: 700px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.sobre-link {
+  margin: 2em;
+  background-color: var(--destaque-menu);
+  text-decoration: none;
+  color: var(--fundo-menu);
+  padding: 1.5em;
+  border-radius: 10px;
+  border: var(--destaque-menu) solid 1px;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.sobre-link:hover {
+  border: var(--color-fonte) solid 1px;
+  color: #000;
+  background-color: var(--fundo-menu);
+}
+.sobre-denhesos_artista {
+  border-radius: 20px;
+}
+.sobre .sobre-denhesos_artista:hover {
+  opacity: 0.9;
+}
+.sobre .sobre-denhesos {
+  transition: 0.2s ease-in-out;
+}
+
+.sobre-denhesos_carneiro {
+  position: relative;
+  left: -300px;
+  top: -15em;
+}
+.nossos-games {
+  margin-top: 12em;
+  background-image: URL("imagens/celular_na_moita.png");
+  height: 130vh;
+}
+.nossos-games_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20em;
+  column-gap: 35em;
+}
+.nossos-games_card figure {
+  border-radius: 22px;
+  width: 390px;
+  height: 387px;
+  background-color: var(--fundo-menu);
+  margin: 1em;
+  padding: 3em;
+  line-height: 1.58em;
+}
+.nossos-games_card figure .nossos-games_card-icone {
+  border-radius: 20px;
+  border: 8px solid #ebe9e9;
+}
+
+.nossos-games_card figure figcaption {
+  position: relative;
+  right: 2em;
+  float: inline-end;
+  margin-top: 1em;
+  font-size: 22px;
+  color: var(--color-fonte);
+  font-weight: 900;
+}
+.nossos-games_card figure figcaption strong {
+  font-size: 18px;
+  font-weight: 300;
+}
+.nossos-games_card figure p {
+  margin: 1em 0;
+  width: 280px;
+  font-size: 16px;
+  line-height: 1.6em;
+  text-align: justify;
+}
+.junte-se-a-equipe {
+  margin-top: 12em;
+}
+
+.junte-se-a-equipe_fundo_1,
+.junte-se-a-equipe_fundo_2 {
+  height: 80vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.fundo-1_div-titulo {
+  margin: 15em 5em;
+  padding: 6em 0;
+  line-height: 4em;
+  width: 800px;
+}
+.fundo-1_div-titulo h2 {
+  font-size: 25px;
+  color: var(--fundo-menu);
+}
+.fundo-1_div-titulo h4 {
+  font-size: 50px;
+  color: var(--fundo-menu);
+  font-family: var(--font-primaria);
+}
+.fundo-1_div-titulo a {
+  padding: 1em;
+  line-height: 7em;
+  background-color: var(--cor-secundaria);
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 100;
+  color: #363636;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.fundo-1_div-titulo a:hover {
+  background-color: var(--fundo-menu);
+}
+.junte-se-a-equipe_imagem{
+  position: absolute;
+  margin: -25.8em 80em;
+  
+}
+.junte-se-a-equipe_fundo_1 {
+  background-image: url("/imagens/dragao_vermelho.jpg");
+}
+.junte-se-a-equipe_fundo_2 {
+  background-image: url("/imagens/estrelas_azul.jpg");
+}
+
+.formulario {
+  width: 420px;
+  height: 600px;
+  background: var(--fundo-menu);
+  position: absolute;
+  margin: -15em 16em;
+  border-radius: 25px;
+  display: grid;
+
+  grid-template-areas:
+    "titulo titulo"
+    "nome sobrenome"
+    "email email "
+    "mensagem mensagem"
+    "botao botao";
+  padding: 2em;
+  
+}
+.formulario-titulo {
+  grid-area: titulo;
+}
+.formulario-nome {
+  grid-area: nome;
+}
+.formulario-sobrenome {
+  grid-area: sobrenome;
+}
+.formulario-email {
+  grid-area: email;
+}
+.formulario-mensagem {
+  grid-area: mensagem;
+}
+.formulario button {
+  grid-area: botao;
+}
+.formulario h3 {
+  font-size: 33px;
+  font-weight: 700;
+  color: var(--color-fonte);
+  margin: 0.5em 0;
+}
+.formulario p {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-fonte);
+  line-height: 1.5em;
+}
+.formulario input[type="text"],
+.formulario input[type="email"] {
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: solid 1px;
+}
+
+.formulario input[type="email"],
+.formulario textarea {
+  width: 340px;
+}
+.formulario textarea {
+  height: 70px;
+}
+
+.formulario input,
+.formulario textarea {
+  display: flex;
+  margin: 0.5em 0;
+}
+.formulario label {
+  color: var(--color-fonte);
+  font-weight: 500;
+}
+
+.formulario button {
+  background-color: var(--color-fonte);
+  color: var(--fundo-menu);
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1em;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+
+.formulario button:hover {
+  background-color: var(--destaque-menu);
+}
+
+.formulario-newsletter {
+  position: absolute;
+  background-color: var(--destaque-menu);
+  margin: -38em 80em;
+  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+  display: grid;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas:
+    "titulo titulo"
+    "input botao";
+  color: var(--fundo-menu);
+}
+.formulario-newsletter h3 {
+  grid-area: titulo;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.formulario-newsletter input {
+  grid-area: input;
+  display: flex;
+  width: 220px;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  margin: 1em 0;
+}
+.formulario-newsletter button {
+  grid-area: botao;
+  height: 54px;
+  width: 85px;
+  border-radius: 15px;
+  border: none;
+  color: #000;
+  background-color: var(--cor-secundaria);
+  font-size: 15px;
+  margin: 0.5em;
+  align-self: center;
+  position: relative;
+  top: 0.5em;
+}
+
+.btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0em 43em;
+  cursor: pointer;
+  list-style: none;
+
+}
+.btn a{
+  text-decoration: none;
+  color: var(--fundo-menu);
+
+}
+.rodape{
+  color: var(--color-fonte);
+ 
+}
+.rodape ul{
+  display: flex;
+  
+ 
+ 
+}
+
+.rodape h4{
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif, Times, serif;
+  margin: 1.5em 27em;
+  
+}
+.rodape .rodape-div{
+  
+  border-bottom:1px solid ;
+  border-top: 1px solid;
+  margin: 2em 10em;
+  
+}
+
+
+.rodape .rodape-div .rodape-div_lista {
+  width: 200px;
+  margin: 4em 6em;
+  font-weight: 500;
+  line-height: 1.8em;
+  color: #6b6a6a;
+
+}
+
+.rodape .rodape-div .rodape-div_lista ul{
+ display: flex;
+ flex-direction: column;
+ 
+}
+.rodape .rodape-div .rodape-div_lista a{
+ text-decoration: none;
+ color: #6b6a6a;
+
+}
+.rodape .rodape-div .rodape-div_lista h5{
+  font-size: 25px;
+  font-family: var(--font-primaria);
+  color: var(--color-fonte);
+  margin:1em 0 ;
+}
