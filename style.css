@@ -13,14 +13,14 @@
 }
 body {
   background-color: #eeefea;
-  
-
 }
 .header {
   font-weight: 200;
   position: fixed;
   width: 100vw;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-navBar {
@@ -39,13 +39,14 @@ body {
   font-family: var(--font-secundaria);
   font-weight: 900;
   color: #fff;
+  margin: 0 5em;
 }
 
 .header-navBar ul {
   display: flex;
   border-end-end-radius: 10px;
   border-end-start-radius: 10px;
-  box-shadow: -.5px -0.5px 3px var(--destaque-menu);
+  box-shadow: -0.5px -0.5px 3px var(--destaque-menu);
 }
 
 .header-navBar_dorp-down {
@@ -256,7 +257,9 @@ body {
 .nossos-games {
   margin-top: 12em;
   background-image: URL("imagens/celular_na_moita.png");
+  background-position: center;
   height: 130vh;
+ 
 }
 .nossos-games_card {
   display: grid;
@@ -311,7 +314,6 @@ body {
   background-size: cover;
 }
 
-
 .fundo-1_div-titulo {
   margin: 15em 5em;
   padding: 6em 0;
@@ -341,10 +343,9 @@ body {
 .fundo-1_div-titulo a:hover {
   background-color: var(--fundo-menu);
 }
-.junte-se-a-equipe_imagem{
+.junte-se-a-equipe_imagem {
   position: absolute;
   margin: -25.8em 80em;
-  
 }
 .junte-se-a-equipe_fundo_1 {
   background-image: url("/imagens/dragao_vermelho.jpg");
@@ -369,7 +370,6 @@ body {
     "mensagem mensagem"
     "botao botao";
   padding: 2em;
-  
 }
 .formulario-titulo {
   grid-area: titulo;
@@ -497,38 +497,28 @@ body {
   margin: 0em 43em;
   cursor: pointer;
   list-style: none;
-
 }
-.btn a{
+.btn a {
   text-decoration: none;
   color: var(--fundo-menu);
-
 }
-.rodape{
+.rodape {
   color: var(--color-fonte);
- 
 }
-.rodape ul{
+.rodape ul {
   display: flex;
-  
- 
- 
 }
 
-.rodape h4{
+.rodape h4 {
   font-size: 25px;
-  font-family:Arial, Helvetica, sans-serif, Times, serif;
+  font-family: Arial, Helvetica, sans-serif, Times, serif;
   margin: 1.5em 27em;
-  
 }
-.rodape .rodape-div{
-  
-  border-bottom:1px solid ;
+.rodape .rodape-div {
+  border-bottom: 1px solid;
   border-top: 1px solid;
   margin: 2em 10em;
-  
 }
-
 
 .rodape .rodape-div .rodape-div_lista {
   width: 200px;
@@ -536,22 +526,180 @@ body {
   font-weight: 500;
   line-height: 1.8em;
   color: #6b6a6a;
-
 }
 
-.rodape .rodape-div .rodape-div_lista ul{
- display: flex;
- flex-direction: column;
- 
+.rodape .rodape-div .rodape-div_lista ul {
+  display: flex;
+  flex-direction: column;
 }
-.rodape .rodape-div .rodape-div_lista a{
- text-decoration: none;
- color: #6b6a6a;
-
+.rodape .rodape-div .rodape-div_lista a {
+  text-decoration: none;
+  color: #6b6a6a;
 }
-.rodape .rodape-div .rodape-div_lista h5{
+.rodape .rodape-div .rodape-div_lista h5 {
   font-size: 25px;
   font-family: var(--font-primaria);
   color: var(--color-fonte);
-  margin:1em 0 ;
+  margin: 1em 0;
+}
+
+.menu-hambuerguer {
+  display: none;
+}
+
+@media (width: 320px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header-navBar_logo {
+    margin: 0 1em;
+  }
+  .ativa {
+    display: none;
+  }
+
+  .menu-hambuerguer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    width: 65px;
+    height: 50px;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    margin: 0.2em 0.5em;
+    float: right;
+    background-color: var(--fundo-menu);
+    z-index: 1;
+  }
+
+  .menu-hambuerguer span {
+    align-self: center;
+    height: 3px;
+    background-color: #000;
+    justify-self: center;
+    width: 30px;
+  }
+
+  .header-navBar {
+    position: absolute;
+    margin: 0;
+    height: 50vh;
+  }
+  .header-navBar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .header-navBar ul li:last-child a {
+    border-end-end-radius: 0px;
+  }
+
+  .header-navBar ul li:first-child a {
+    border-end-start-radius: 0px;
+  }
+
+  .header-navBar ul li {
+    flex-direction: column;
+  }
+
+  .header-navBar ul li a {
+  }
+
+  .parallax-div {
+    margin: 0px;
+    width: 100%;
+  }
+  .parallax-div h2 {
+    font-size: 5em;
+  }
+  .parallax-div h3 {
+    font-size: 1.5em;
+    font-weight: 100;
+    margin: 1em 0em;
+  }
+  .parallax-div_loja {
+    margin: 0em;
+    float: right;
+  }
+  .parallax-div img {
+    margin: 0.5em;
+  }
+  .cards {
+    flex-direction: column;
+    position: relative;
+    top: 55em;
+  }
+  .cards-jogos figure img {
+    width: 287px;
+  }
+  .cards-conheca-mas {
+    width: 290px;
+  }
+  .cards-conheca-mas h3 {
+    padding: 4em 0;
+  }
+
+  .sobre {
+    margin: 100em 0  0 0;
+  }
+
+  .sobre h2 ,.nossos-games h2{
+    width: 300px;
+    font-size: 29px;
+  }
+  .sobre p ,.nossos-games p{
+    width: 300px;
+    font-size: 19px;
+  }
+  .nossos-games p{
+    margin-bottom: 70em;
+  }
+  .sobre-denhesos_artista {
+    width: 300px;
+  }
+  .sobre-denhesos_carneiro {
+    left: 4px;
+    top: -5em;
+  }
+  .sobre-denhesos_carneiro img {
+    width: 170px;
+  }
+  .nossos-games {
+    text-align: center;
+    margin-top: 20em;
+    background-image: URL("imagens/celular_na_moita.png");
+    background-position: center;
+    background-size:80em;
+    background-repeat: no-repeat;
+  }
+  .nossos-games_card{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    top: -20em;    
+    height: 150px;
+  }
+
+  .nossos-games_card figure {
+    width: 300px;
+    height: 380px;
+    margin: .5em;
+    padding: .6em;
+    line-height: 1.8em;
+  }
+  .nossos-games_card figure figcaption {
+    right: 1em;  
+    text-align: left;
+  }
+
+  .nossos-games_card .nossos-games_card-loja{
+    width: 135px;
+
+
+  }
 }
