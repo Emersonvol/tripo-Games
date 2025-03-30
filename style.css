@@ -547,7 +547,7 @@ body {
   display: none;
 }
 
-@media (width: 320px) {
+@media (min-width:320px) and (max-width:425px){
   .header {
     justify-content: space-between;
   }
@@ -634,7 +634,7 @@ body {
     top: 55em;
   }
   .cards-jogos figure img {
-    width: 287px;
+    width: 100%;
   }
   .cards-conheca-mas {
     width: 290px;
