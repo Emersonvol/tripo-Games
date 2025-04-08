@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Suez+One&display=swap");
+
 :root {
   --fundo-menu: #fff;
   --destaque-menu: #da392b;
@@ -11,9 +12,11 @@
     sans-serif;
   --cor-secundaria: #f5e250;
 }
+
 body {
   background-color: #eeefea;
 }
+
 .header {
   font-weight: 200;
   position: fixed;
@@ -69,6 +72,7 @@ body {
   transition: 0.1s ease-in-out;
   background-color: var(--fundo-menu);
 }
+
 .header-navBar ul li:last-child a {
   border-end-end-radius: 10px;
 }
@@ -96,20 +100,24 @@ body {
   flex-direction: column;
   margin-bottom: 30em;
 }
+
 .parallax-div {
   color: var(--color-fonte);
   font-family: var(--font-primaria);
   margin: 0 100px;
 }
+
 .parallax-div h2 {
   font-size: 5em;
   margin: 0.1em 0;
 }
+
 .parallax-div h3 {
   font-size: 1.5em;
   font-weight: 100;
   margin: 1em 0em;
 }
+
 .parallax-div_loja {
   margin: 1em;
 }
@@ -130,6 +138,7 @@ body {
   position: relative;
   text-align: center;
 }
+
 .cards-jogos figure img {
   border-radius: 20px;
 }
@@ -148,6 +157,7 @@ body {
   border-radius: 20px;
   transition: 0.2s ease-in-out;
 }
+
 .cards-jogos figure figcaption:hover {
   opacity: 0;
 }
@@ -158,6 +168,7 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
+
 .cards-jogos figure figcaption small {
   padding-bottom: 3em;
   padding-top: 0.5em;
@@ -170,6 +181,7 @@ body {
   margin: 1em;
   border-radius: 20px;
 }
+
 .cards-conheca-mas h3 {
   display: flex;
   width: 100%;
@@ -183,6 +195,7 @@ body {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+
 .cards-conheca-mas h3:hover {
   background-image: var(--gradiente-hover);
   color: #fff;
@@ -197,6 +210,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .sobre h3 {
   color: var(--color-fonte);
   font-size: 25px;
@@ -239,12 +253,15 @@ body {
   color: #000;
   background-color: var(--fundo-menu);
 }
+
 .sobre-denhesos_artista {
   border-radius: 20px;
 }
+
 .sobre .sobre-denhesos_artista:hover {
   opacity: 0.9;
 }
+
 .sobre .sobre-denhesos {
   transition: 0.2s ease-in-out;
 }
@@ -254,19 +271,21 @@ body {
   left: -300px;
   top: -15em;
 }
+
 .nossos-games {
   margin-top: 12em;
   background-image: URL("imagens/celular_na_moita.png");
   background-position: center;
   height: 130vh;
- 
 }
+
 .nossos-games_card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 20em;
   column-gap: 35em;
 }
+
 .nossos-games_card figure {
   border-radius: 22px;
   width: 390px;
@@ -276,6 +295,7 @@ body {
   padding: 3em;
   line-height: 1.58em;
 }
+
 .nossos-games_card figure .nossos-games_card-icone {
   border-radius: 20px;
   border: 8px solid #ebe9e9;
@@ -290,10 +310,12 @@ body {
   color: var(--color-fonte);
   font-weight: 900;
 }
+
 .nossos-games_card figure figcaption strong {
   font-size: 18px;
   font-weight: 300;
 }
+
 .nossos-games_card figure p {
   margin: 1em 0;
   width: 280px;
@@ -301,6 +323,7 @@ body {
   line-height: 1.6em;
   text-align: justify;
 }
+
 .junte-se-a-equipe {
   margin-top: 12em;
 }
@@ -320,15 +343,18 @@ body {
   line-height: 4em;
   width: 800px;
 }
+
 .fundo-1_div-titulo h2 {
   font-size: 25px;
   color: var(--fundo-menu);
 }
+
 .fundo-1_div-titulo h4 {
   font-size: 50px;
   color: var(--fundo-menu);
   font-family: var(--font-primaria);
 }
+
 .fundo-1_div-titulo a {
   padding: 1em;
   line-height: 7em;
@@ -340,23 +366,27 @@ body {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
+
 .fundo-1_div-titulo a:hover {
   background-color: var(--fundo-menu);
 }
+
 .junte-se-a-equipe_imagem {
   position: absolute;
   margin: -25.8em 80em;
 }
+
 .junte-se-a-equipe_fundo_1 {
   background-image: url("/imagens/dragao_vermelho.jpg");
 }
+
 .junte-se-a-equipe_fundo_2 {
   background-image: url("/imagens/estrelas_azul.jpg");
 }
 
 .formulario {
-  width: 420px;
-  height: 600px;
+  width: 30vw;
+  height: 60vh;
   background: var(--fundo-menu);
   position: absolute;
   margin: -15em 16em;
@@ -369,42 +399,51 @@ body {
     "email email "
     "mensagem mensagem"
     "botao botao";
-  padding: 2em;
+  padding: 1em;
 }
+
 .formulario-titulo {
   grid-area: titulo;
 }
+
 .formulario-nome {
   grid-area: nome;
 }
+
 .formulario-sobrenome {
   grid-area: sobrenome;
 }
+
 .formulario-email {
   grid-area: email;
 }
+
 .formulario-mensagem {
   grid-area: mensagem;
 }
+
 .formulario button {
   grid-area: botao;
 }
+
 .formulario h3 {
   font-size: 33px;
   font-weight: 700;
   color: var(--color-fonte);
   margin: 0.5em 0;
 }
+
 .formulario p {
   font-size: 20px;
   font-weight: 600;
   color: var(--color-fonte);
   line-height: 1.5em;
 }
+
 .formulario input[type="text"],
 .formulario input[type="email"] {
-  width: 160px;
-  height: 50px;
+  width: 95%;
+  height: 50%;
   border-radius: 10px;
   font-size: 18px;
   border: solid 1px;
@@ -412,8 +451,9 @@ body {
 
 .formulario input[type="email"],
 .formulario textarea {
-  width: 340px;
+  width: 100%;
 }
+
 .formulario textarea {
   height: 70px;
 }
@@ -423,6 +463,7 @@ body {
   display: flex;
   margin: 0.5em 0;
 }
+
 .formulario label {
   color: var(--color-fonte);
   font-weight: 500;
@@ -460,6 +501,7 @@ body {
     "input botao";
   color: var(--fundo-menu);
 }
+
 .formulario-newsletter h3 {
   grid-area: titulo;
   font-size: 23px;
@@ -475,10 +517,12 @@ body {
   border-radius: 15px;
   margin: 1em 0;
 }
+
 .formulario-newsletter button {
   grid-area: botao;
-  height: 54px;
   width: 85px;
+  height: 54px;
+
   border-radius: 15px;
   border: none;
   color: #000;
@@ -498,13 +542,16 @@ body {
   cursor: pointer;
   list-style: none;
 }
+
 .btn a {
   text-decoration: none;
   color: var(--fundo-menu);
 }
+
 .rodape {
   color: var(--color-fonte);
 }
+
 .rodape ul {
   display: flex;
 }
@@ -514,6 +561,7 @@ body {
   font-family: Arial, Helvetica, sans-serif, Times, serif;
   margin: 1.5em 27em;
 }
+
 .rodape .rodape-div {
   border-bottom: 1px solid;
   border-top: 1px solid;
@@ -532,10 +580,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .rodape .rodape-div .rodape-div_lista a {
   text-decoration: none;
   color: #6b6a6a;
 }
+
 .rodape .rodape-div .rodape-div_lista h5 {
   font-size: 25px;
   font-family: var(--font-primaria);
@@ -547,7 +597,7 @@ body {
   display: none;
 }
 
-@media (min-width:320px) and (max-width:425px){
+@media (min-width: 320px) and (max-width: 425px) {
   .header {
     justify-content: space-between;
   }
@@ -555,6 +605,7 @@ body {
   .header-navBar_logo {
     margin: 0 1em;
   }
+
   .ativa {
     display: none;
   }
@@ -587,6 +638,7 @@ body {
     margin: 0;
     height: 50vh;
   }
+
   .header-navBar ul {
     display: flex;
     flex-direction: column;
@@ -594,6 +646,7 @@ body {
     box-shadow: none;
     border-radius: 0;
   }
+
   .header-navBar ul li:last-child a {
     border-end-end-radius: 0px;
   }
@@ -606,100 +659,252 @@ body {
     flex-direction: column;
   }
 
-  .header-navBar ul li a {
-  }
-
   .parallax-div {
     margin: 0px;
     width: 100%;
   }
+
   .parallax-div h2 {
     font-size: 5em;
   }
+
   .parallax-div h3 {
     font-size: 1.5em;
     font-weight: 100;
     margin: 1em 0em;
   }
+
   .parallax-div_loja {
     margin: 0em;
     float: right;
   }
+
   .parallax-div img {
     margin: 0.5em;
   }
+
   .cards {
     flex-direction: column;
     position: relative;
     top: 55em;
   }
+
   .cards-jogos figure img {
     width: 100%;
   }
+
   .cards-conheca-mas {
     width: 290px;
   }
+
   .cards-conheca-mas h3 {
     padding: 4em 0;
   }
 
   .sobre {
-    margin: 100em 0  0 0;
+    margin: 100em 0 0 0;
   }
 
-  .sobre h2 ,.nossos-games h2{
+  .sobre h2,
+  .nossos-games h2 {
     width: 300px;
     font-size: 29px;
   }
-  .sobre p ,.nossos-games p{
+
+  .sobre p,
+  .nossos-games p {
     width: 300px;
     font-size: 19px;
   }
-  .nossos-games p{
+
+  .nossos-games p {
     margin-bottom: 70em;
   }
+
   .sobre-denhesos_artista {
     width: 300px;
   }
+
   .sobre-denhesos_carneiro {
     left: 4px;
     top: -5em;
   }
+
   .sobre-denhesos_carneiro img {
     width: 170px;
   }
+
   .nossos-games {
     text-align: center;
     margin-top: 20em;
     background-image: URL("imagens/celular_na_moita.png");
     background-position: center;
-    background-size:80em;
+    background-size: 80em;
     background-repeat: no-repeat;
   }
-  .nossos-games_card{
+
+  .nossos-games_card {
     display: flex;
     flex-direction: column;
     gap: 0;
     position: relative;
-    top: -20em;    
+    top: -20em;
     height: 150px;
   }
 
   .nossos-games_card figure {
     width: 300px;
     height: 380px;
-    margin: .5em;
-    padding: .6em;
+    margin: 0.5em;
+    padding: 0.6em;
     line-height: 1.8em;
   }
+
   .nossos-games_card figure figcaption {
-    right: 1em;  
+    right: 1em;
     text-align: left;
   }
 
-  .nossos-games_card .nossos-games_card-loja{
+  .nossos-games_card .nossos-games_card-loja {
     width: 135px;
+  }
+
+  .junte-se-a-equipe {
+    margin-top: 80em;
+  }
+
+  .junte-se-a-equipe_fundo_1 {
+    width: 100vw;
+  }
+
+  .junte-se-a-equipe_fundo_2 {
+    height: 115vh;
+
+  }
 
 
+
+  .fundo-1_div-titulo {
+    width: 300px;
+    margin: 1em;
+  }
+
+  .fundo-1_div-titulo h2 {
+    font-size: 20px;
+    line-height: 1.8em;
+  }
+
+  .fundo-1_div-titulo h4 {
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+
+  .junte-se-a-equipe_imagem {
+    width: 100%;
+    position: absolute;
+    margin: -17em 0em;
+  }
+
+  .formulario {
+    width: 90%;
+    height: 72vh;
+    margin: 2em 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario input[type="text"],
+  .formulario input[type="email"] {
+    height: 6vh;
+  }
+
+  .formulario input[type="email"],
+  .formulario textarea {
+    width: 95%;
+  }
+
+  .formulario-newsletter {
+    display: flex;
+    flex-direction: column;
+    margin: -19em .5em;
+    width: 95%;
+    height: 30vh;
+  }
+
+  .formulario-newsletter h3 {
+    margin: 1em;
+  }
+
+  .formulario-newsletter button {
+    width: 100%;
+    padding: 1em;
+
+  }
+
+  .formulario-newsletter input {
+    width: 85vw;
+  }
+ 
+  .rodape ul {
+    display: grid;
+    grid-template-areas: 
+    "contato contato"
+    "navegacao midia"
+    "encontre encontre"
+      ;
+     
+  }
+
+  .contato{
+    grid-area: contato;
+  }
+  .navegacao{
+    grid-area: navegacao;
+  }
+  .midia{
+    grid-area: midia;
+    
+    
+  }
+.encontre{
+  grid-area: encontre;
+
+ 
+}
+
+  .rodape h4 {
+    margin: 1.5em 1em;
+    text-align: center;
+  }
+  
+  .rodape .rodape-div {
+    
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin:1em;
+
+  }
+  
+  .rodape .rodape-div .rodape-div_lista {
+    width: 150px;
+    margin: 0em;
+    
+  }
+  
+  .rodape  ul {
+    width: 50%;
+  }
+  
+  
+  .rodape .rodape-div .rodape-div_lista a {
+    text-decoration: none;
+    color: #6b6a6a;
+  }
+  
+  .rodape .rodape-div .rodape-div_lista h5 {
+    font-size: 25px;
+    font-family: var(--font-primaria);
+    color: var(--color-fonte);
+    margin: 1em 0;
   }
 }
