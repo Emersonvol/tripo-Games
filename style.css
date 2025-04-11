@@ -11,6 +11,7 @@
   --font-terciaria: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
   --cor-secundaria: #f5e250;
+
 }
 
 body {
@@ -392,7 +393,6 @@ body {
   margin: -15em 16em;
   border-radius: 25px;
   display: grid;
-
   grid-template-areas:
     "titulo titulo"
     "nome sobrenome"
@@ -522,7 +522,6 @@ body {
   grid-area: botao;
   width: 85px;
   height: 54px;
-
   border-radius: 15px;
   border: none;
   color: #000;
@@ -597,7 +596,7 @@ body {
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .header {
     justify-content: space-between;
   }
@@ -619,7 +618,7 @@ body {
     height: 50px;
     border-end-end-radius: 15px;
     border-end-start-radius: 15px;
-    margin: 0.2em 0.5em;
+    margin: 0em 0.5em;
     float: right;
     background-color: var(--fundo-menu);
     z-index: 1;
@@ -665,13 +664,14 @@ body {
   }
 
   .parallax-div h2 {
+    margin: 0 0.5em;
     font-size: 5em;
   }
 
   .parallax-div h3 {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 100;
-    margin: 1em 0em;
+    margin: 1em 1em;
   }
 
   .parallax-div_loja {
@@ -694,11 +694,11 @@ body {
   }
 
   .cards-conheca-mas {
-    width: 290px;
+    width: 90%;
   }
 
   .cards-conheca-mas h3 {
-    padding: 4em 0;
+    padding: 4em 1em;
   }
 
   .sobre {
@@ -722,7 +722,8 @@ body {
   }
 
   .sobre-denhesos_artista {
-    width: 300px;
+    margin: 0 1em;
+    width: 90%;
   }
 
   .sobre-denhesos_carneiro {
@@ -736,7 +737,7 @@ body {
 
   .nossos-games {
     text-align: center;
-    margin-top: 20em;
+    margin-top: 15em;
     background-image: URL("imagens/celular_na_moita.png");
     background-position: center;
     background-size: 80em;
@@ -844,67 +845,376 @@ body {
   .formulario-newsletter input {
     width: 85vw;
   }
- 
+
   .rodape ul {
     display: grid;
-    grid-template-areas: 
-    "contato contato"
-    "navegacao midia"
-    "encontre encontre"
-      ;
-     
+    grid-template-areas:
+      "contato contato"
+      "navegacao midia"
+      "encontre encontre"
+    ;
+
   }
 
-  .contato{
+  .contato {
     grid-area: contato;
   }
-  .navegacao{
+
+  .navegacao {
     grid-area: navegacao;
   }
-  .midia{
-    grid-area: midia;
-    
-    
-  }
-.encontre{
-  grid-area: encontre;
 
- 
-}
+  .midia {
+    grid-area: midia;
+
+
+  }
+
+  .encontre {
+    grid-area: encontre;
+
+
+  }
 
   .rodape h4 {
     margin: 1.5em 1em;
     text-align: center;
   }
-  
+
   .rodape .rodape-div {
-    
+
     border-bottom: 1px solid;
     border-top: 1px solid;
-    margin:1em;
+    margin: 1em;
 
   }
-  
+
   .rodape .rodape-div .rodape-div_lista {
     width: 150px;
     margin: 0em;
-    
+
   }
-  
-  .rodape  ul {
+
+  .rodape ul {
     width: 50%;
   }
-  
-  
+
+
   .rodape .rodape-div .rodape-div_lista a {
     text-decoration: none;
     color: #6b6a6a;
   }
-  
+
   .rodape .rodape-div .rodape-div_lista h5 {
     font-size: 25px;
     font-family: var(--font-primaria);
     color: var(--color-fonte);
     margin: 1em 0;
   }
+
+}
+
+@media (width: 425px) {
+  .cards {
+
+    top: 65em;
+  }
+
+  .parallax-div img {
+    margin: 0 2.1em;
+  }
+
+  .sobre {
+    margin: 120em 0 0 0;
+  }
+}
+
+@media (width: 768px) {
+
+  .parallax-div {
+    display: flex;
+    flex-direction: column;
+    margin: 600px 0;
+    width: 100%;
+  }
+
+  .parallax-div div {
+    display: flex;
+    flex-direction: row;
+    margin: 0 2em;
+
+  }
+
+  .parallax-div div img {
+    width: 90%;
+    margin: 0.5em;
+  }
+
+
+  .parallax-div h2 {
+    margin: 0 0.5em;
+    font-size: 5em;
+  }
+
+  .parallax-div h3 {
+    font-size: 1.5em;
+    font-weight: 100;
+    margin: 1em 1.7em;
+  }
+
+  .parallax-div_loja {
+    margin: 0em;
+    float: right;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    top: -42em;
+    width: 48em;
+
+  }
+
+  .cards-jogos figure img {
+    width: 100%;
+  }
+
+  .cards-conheca-mas {
+    width: 90%;
+    height: 470px;
+  }
+
+  .cards-conheca-mas h3 {
+    padding: 4em 1em;
+  }
+
+  .sobre {
+    margin: 60em 0 0 0;
+  }
+
+  .sobre h2,
+  .nossos-games h2 {
+    width: 300px;
+    font-size: 29px;
+    margin: 0em 0;
+  }
+
+  .sobre p,
+  .nossos-games p {
+    width: 300px;
+    font-size: 19px;
+  }
+
+  .nossos-games p {
+    margin-bottom: 40em;
+  }
+
+  .sobre-denhesos_artista {
+    margin: 0 1em;
+    width: 90%;
+  }
+
+  .sobre-denhesos_carneiro {
+    left: 4px;
+    top: -5em;
+  }
+
+  .sobre-denhesos_carneiro img {
+    width: 170px;
+  }
+
+  .nossos-games {
+    text-align: center;
+    margin-top: 30em;
+    background-image: URL("imagens/celular_na_moita.png");
+    background-position: center;
+    background-size: 80em;
+    background-repeat: no-repeat;
+  }
+
+  .nossos-games_card {
+    display: grid;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    top: -20em;
+    height: 90px;
+  }
+
+  .nossos-games_card figure {
+    width: 300px;
+    height: 380px;
+    margin: 0.5em;
+    padding: 0.6em;
+    line-height: 1.8em;
+  }
+
+  .nossos-games_card figure figcaption {
+    right: 1em;
+    text-align: left;
+  }
+
+  .nossos-games_card .nossos-games_card-loja {
+    width: 135px;
+  }
+
+  .junte-se-a-equipe {
+    margin-top: 40em;
+  }
+
+  .junte-se-a-equipe_fundo_1 {
+    width: 100vw;
+  }
+
+  .junte-se-a-equipe_fundo_2 {
+    height: 115vh;
+
+  }
+
+  .fundo-1_div-titulo {
+    width: 300px;
+    margin: 1em;
+  }
+
+  .fundo-1_div-titulo h2 {
+    font-size: 20px;
+    line-height: 1.8em;
+  }
+
+  .fundo-1_div-titulo h4 {
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+
+  .junte-se-a-equipe_imagem {
+    width: 70%;
+    position: absolute;
+    margin: -28.5em 14em;
+  }
+
+  .formulario {
+    width: 80%;
+    margin: 2em 5em;
+
+  }
+
+  .formulario-newsletter {
+
+    margin: -19em 5em;
+    width: 80%;
+    height: 30vh;
+  }
+
+  .formulario-newsletter input {
+    width: 75vw;
+  }
+
+  .rodape ul {
+    display: flex;
+
+  }
+
+  .rodape .rodape-div .rodape-div_lista {
+    width: 150px;
+    margin: 2em;
+
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+  .cards figure img {
+    width: 240px;
+  }
+
+  .cards-jogos {
+    margin: 0 .5em;
+  }
+
+  .cards-conheca-mas {
+    margin: 0em;
+    width: 240px;
+    height: 320px;
+  }
+
+  .nossos-games_card {
+    column-gap: 18em;
+    margin: 3em;
+  }
+
+  .nossos-games_card figure {
+    padding: 1em;
+    width: 340px;
+    height: 320px;
+  }
+
+  .formulario-newsletter {
+    margin: -35em 35em;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    display: grid;
+  }
+
+  .formulario {
+    margin: -15em 5em;
+  }
+
+  .junte-se-a-equipe_imagem {
+    position: absolute;
+    margin: -25.8em 33em;
+  }
+
+  .header-navBar_logo {
+    padding: 1em 1em;
+    margin: 0 5em;
+  }
+
+  .rodape h4 {
+    margin: 1.5em 5em;
+    text-align: center;
+  }
+
+  .rodape .rodape-div {
+    margin: 2em 1em;
+  }
+
+  .rodape .rodape-div .rodape-div_lista {
+    margin: 4em 1em;
+  }
+
+
+
+}
+
+@media (width: 1440px){
+  .cards figure img {
+    width: 300px;
+  }
+
+  .cards-conheca-mas {
+    width: 300px;
+    height: 400px;
+  }
+
+  .formulario-newsletter {
+    margin: -35em 55em;
+    
+  }
+
+  .junte-se-a-equipe_imagem {
+    position: absolute;
+    margin: -25.8em 55em;
+  }
+
+  .rodape .rodape-div {
+    margin: 2em 10em;
+  }
+
+  .rodape .rodape-div .rodape-div_lista {
+    margin: 4em 2em;
+  }
+
 }
